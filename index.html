@@ -4,12 +4,257 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://col-css.netlify.app/css/column.css">
+  <title>Vet</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/column.css">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <div class="wraper">
+    <section id="site-header">
+      <h2 class="hidden">vet</h2>
+      <div class="container">
+        <div class="site-header__adress header-adress flex">
+          <div class="header-adress__item">
+            <a class="header-adress__link" target="_blank" href="https://www.google.ru/maps/@47.1073349,37.6403472,17z"><i class='bx header-adress__icons bxs-home'></i> г. Мариуполь, проспект Победы, 48а</a>
+          </div>
+          <div class="header-adress__item">
+            <a class="header-adress__link" href="tel:0676347574"><i class='bx header-adress__icons bxs-phone'></i>(067) 634 -75 - 74</a>
+            <a class="header-adress__link header-adress__dodt" href="tel:0637570131">(0637) 57 - 01 - 31</a>
+            <a class="header-adress__link" href="tel:0982664389">(098) 266 - 43 - 89</a>
+          </div>
+          <div class="header-adress__item">
+            <time class="header-adress__link calendar--icon header-adress__tme" datetime="2021-10-01">Пн - Пт 8:00 - 18:00</time>
+            <time class="header-adress__link header-adress__tme" datetime="2021-10-01">Сб - Вс 8:00 - 14:00</time>
+          </div>
+        </div>
+      </div>
+      <header class="site-header">
+        <div class="container">
+          <div class="site-header__elements flex align between">
+              <a class="site-header__logos" href="index.html">
+                <img class="site-header__logo" src="./img/logo.svg" alt="logo">
+              </a>
+            <nav class="site-header__nav nav">
+              <ul class="nav__list flex">
+                <li class="nav__item"><a class="nav__link activ--icon" href="#">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">О Клинике</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Наши Услуги</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Полезные Статьи</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">FAQ</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="site-header__btns">
+              <a class="site-header__btn" href="#">Задать вопрос</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="site-header__hero hero">
+        <div class="container">
+          <div class="hero__elements flex">
+            <div class="hero__des">
+              <h2 class="hero__title">Мы заботимся о <span>ваших питомцах!</span></h2>
+              <p class="hero__text regular">Вам и Вашему любимцу множество услуг по диагностике, профилактике заболеваний по лечению и уходу за Вашими животными. Профессионалы работающие в нашей клинике сделают все для того, чтобы быстро, эффективно и максимально безболезненно выполнить любие процедуры, которые необходимы Вашему домашнему любимцу.</p>
+              <a class="btn hero__btn" href="#">Наши услуги</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="modal">
+      <div class="modal__element flex">
+        <div class="modal__links">
+          <button class="modal__btn"><i class='bx bx-x'></i></button>
+          <h3 class="modal__lititle">Авторизация:</h3>
+          <a class="modal__link modal__link1" href="https://www.google.com/search?q=google&oq=google&aqs=chrome..69i57j46i131i199i433i465i512j35i39j69i59j69i60l2j69i65j69i60.5663j0j7&sourceid=chrome&ie=UTF-8">Войти через Google</a>
+          <a class="modal__link modal__link2" href="https://ru-ru.facebook.com/">Войти через Facebook</a>
+        </div>
+        <div class="modal__form">
+          <h2 class="modal__title">Задать вопрос</h2>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <label>
+              <input class="modal__input" type="text" placeholder="Ваше имя" required>
+            </label>
+            <label>
+              <textarea class="modal__area" name="mesage" id="mesage" placeholder="Опишите Ваш вопрос."></textarea>
+            </label>
+            <button class="modal__sumbit btn" type="submit">Отправить </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="clinc">
+        <div class="container">
+          <div class="clinc__elements margin">
+            <p class="clinc__text margin regular">Наша ветеринарная клиника готова уделить максимум внимания Вам и Вашему питамцу. Здоровье и благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную ветеринарную помощь.</p>
+            <h3 class="clinc__title tex">Оржоникидзевская Ветеринарная клиника</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="servis">
+        <div class="container">
+          <h2 class="servis__title tex">Наши услуги</h2>
+          <div class="servis__elements">
+            <button class="servis__btn-right"><i class='bx servis__bx bx-chevron-left'></i></button>
+            <ul class="servis__list margin flex align between align"> 
+              <li class="servis__item servis--img1 servis-activ">Первичный осмотр</li>
+              <li class="servis__item servis--img2">Первичный осмотр</li>
+              <li class="servis__item servis--img3">Хирургическое вмешательство</li>
+              <li class="servis__item servis--img4">Дерматология</li>
+              <li class="servis__item servis--img5">Лабораторная диагностика</li>
+              <li class="servis__item servis--img6">Офтальмология</li>
+            </ul>
+            <button class="servis__btn"><i class='bx servis__bx bx-chevron-right'></i></button>
+          </div>
+          <div class="servis__block margin flex between align">
+            <div class="servis__des">
+              <h2 class="servis__inner-title">Первичный осмотр</h2>
+              <p class="servis__text regular">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+              <p class="servis__second-text regular">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+              <div class="servis__links">
+                <a class="btn servis__link link--one" href="#">Узнать цену</a>
+                <a class="btn servis__link link--second" href="#">Записаться на приём</a>
+              </div>
+            </div>
+            <div class="servis__img">
+              <img src="./img/servis-cat.jpg" alt="servis-cat-img">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="subscribe">
+        <div class="container">
+          <div class="subscribe__content">
+            <h2 class="subscribe__title">Будь в курсе событий</h2>
+            <form class="subscribe__form flex align" autocomplete="off" action="https://echo.htmlacademy.ru/" method="post">
+              <label><input class="subscribe__input" required placeholder="Укажите Ваш email адрес" type="email" name="email" id="email"></label>
+              <button class="subscribe__btn btn">Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="news">
+        <div class="container">
+          <h2 class="news__title tex">Полезные статьи</h2>
+          <ul class="news__list flex align between">
+            <li class="news__item-one">
+              <div class="news__img">
+                <img src="./img/news1.jpg" alt="news">
+              </div>
+              <div class="news__block">
+                <div class="news__times flex">
+                  <time class="news__titme time--one" datetime="2021-10-01">28.08.2020</time>
+                </div>
+                <h2 class="news__inner-title">Ультразвуковая чистка зубов</h2>
+                <p class="news__text regular">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+                <a class="news__link" href="#">Читать больше</a>
+              </div>
+            </li>
+            <li class="news__item-second flex">
+              <div class="news__img">
+                <img src="./img/news2.jpg" alt="news">
+              </div>
+              <div class="news__middl-des middl-des">
+                <div class="middl-des__times align flex between">
+                  <div class="middl-des__links">
+                    <a class="middl-des__link" href="#">#собака</a>
+                    <a class="middl-des__link" href="#">#дом</a>
+                    <a class="middl-des__link" href="#">#уход</a>
+                  </div>
+                  <time class="news__titme" datetime="2021-10-01">28.08.2020</time>
+                </div>
+                <h2 class="middl-des__title">Перед тем как завести собаку</h2>
+                <p class="middl-des__text regular">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка. Появление в доме котенка приятное и радосное событие.</p>
+                <a class="news__link" href="#">Читать больше</a>
+              </div>
+            </li>
+            <li class="news__item-one">
+              <div class="news__img">
+                <div class="news__img"> 
+                  <img src="./img/news3.jpg" alt="news">
+                </div>
+              </div>
+              <div class="news__block">
+                <div class="news__times flex">
+                  <time class="news__titme time--one" datetime="2021-10-01">28.08.2020</time>
+                </div>
+                <h2 class="news__inner-title">Когда привавать питомца?</h2>
+                <p class="news__text regular">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+                <a class="news__link" href="#">Читать больше</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="fedback">
+        <div class="fedback flex col-12">
+          <div class="fedback__map col-4">
+            <iframe class="fedback__iferame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310843.46422582044!2d13.144545318776055!3d52.50693124209824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2s!4v1633090409980!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="fedback__form col-8">
+            <h2 class="fedback__title">Обратная связь</h2>
+            <p class="fedback__text regular">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
+            <form class="fedback__inputs flex" action="https://echo.htmlacademy.ru/" method="post">
+              <label>
+                <input class="fedback__input" required autocomplete="off" type="text" name="firs-name" id="firs-name" placeholder="Ваше имя">
+              </label>
+              <label>
+                <input class="fedback__input" required autocomplete="off" type="email" name="fedback-email" id="fedback-email" placeholder="Email для обратной связи">
+              </label>
+              <label>
+                <textarea class="fedback__area" required name="fedback-area" id="fedback__area" placeholder="Например: в каком возрасте можно прививать от бешенства?."></textarea>
+              </label>
+              <button class="fedback__btn">Задать нам вопрос</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer id="foter">
+    <div class="container">
+      <div class="foter flex between">
+        <div class="foter__logos flex">
+          <a href="index.html">
+            <img class="foter__logo" src="./img/logo.svg" alt="foter-logo">
+          </a>
+          <div class="foter__block flex align">
+            <ul class="foter__list">
+              <li class="foter__item"><a class="foter__link" href="#">Главная</a></li>
+              <li class="foter__item"><a class="foter__link" href="#">О Клинике</a></li>
+              <li class="foter__item"><a class="foter__link" href="#">Наши Услуги</a></li>
+            </ul>
+            <ul class="foter__list">
+              <li class="foter__item"><a class="foter__link" href="#">Полезные Статьи</a></li>
+              <li class="foter__item"><a class="foter__link" href="#">FAQ</a></li>
+              <li class="foter__item"><a class="foter__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="foter__times">
+          <time class="foter__time" datetime="2021-10-01">Пн - Пт 8:00 - 18:00</time>
+          <time class="foter__time" datetime="2021-10-01">Сб - Вс 8:00 - 14:00</time>
+        </div>
+        <div class="foter__adres foter-adres">
+          <a class="foter-adres__link" target="_blank" href="https://www.google.ru/maps/place/Peremohy+Ave,+48,+Mariupol',+Donets'ka+oblast,+Ukraine,+87500/@47.1073197,37.6406085,17z/data=!3m1!4b1!4m5!3m4!1s0x40e6e6701eb18b2f:0xb8a453f1ef8df5b4!8m2!3d47.1073161!4d37.6428025">г. Мариуполь, <br> проспект Победы, 48а</a>
+        </div>
+        <div class="foter__phons">
+          <a class="foter__phone" href="tel:0676347574">(067) 634 -75 - 74</a>
+          <a class="foter__phone" href="tel:0676347574">(0637) 57 - 01 - 31</a>
+          <a class="foter__phone" href="tel:0676375374">(098) 266 - 43 - 89</a>
+        </div>
+      </div>
+      <div class="foter__last-texts flex">
+        <p class="foter__last-text">© 2020 example. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
 </body>
 </html>
